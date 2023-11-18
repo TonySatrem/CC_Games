@@ -33,6 +33,63 @@ header {
   height: 5%;
 }
 
+main {
+  position: fixed;
+  top: 7vh;
+  height: 88vh;
+  width: 100vw;
+}
+
+.mainContainer {
+  position: relative;
+  right: 30vw;
+  left: 30vw;
+  width: 40vw;
+  height: 88vh;
+  display: flexbox;
+  flex-direction: column;
+}
+
+.choice {
+  height: 13vh;
+  width: 40vw;
+  padding-top: 6vh;
+  font-size: 2vh;
+}
+
+.choice h4 {
+  display: inline-block ;
+}
+
+.games {
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+}
+
+.gamesCol {
+  height: 60vh;
+}
+
+.gameContainer {
+  margin-bottom: 30px;
+  width: 20vw;
+}
+
+.gameContainer h4 {
+  display: block;
+}
+
+.gameLogo {
+  width: 50%;
+  height: 50%;
+}
+
+.gameContainer img {
+  border-radius: 90px;
+  background: url(<path-to-image>), gray 50%;
+}
+
 footer {
   position: absolute;
   bottom: 0;
