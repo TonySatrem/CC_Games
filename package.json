@@ -1,0 +1,28 @@
+{
+  "name": "cc_games",
+  "version": "1.0.0",
+  "description": "Catalog of Classic Games",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config src/server/app.js",
+    "dev": "nodemon -r dotenv/config src/server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonySatrem/CC_Games.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonySatrem/CC_Games/issues"
+  },
+  "homepage": "https://github.com/TonySatrem/CC_Games#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
