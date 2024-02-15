@@ -5,19 +5,7 @@ const app = express()
 const dirname = __dirname.substring(0, __dirname.length - 6)
 
 app.get('/', (req, res) => {
-  res.sendFile('client/main/index.html', {root : dirname})
-})
-
-app.get('/*.css', (req, res) => {
-  res.sendFile(`client/main/${req.url}`, {root : dirname})
-})
-
-app.get('/*.png', (req, res) => {
-  res.sendFile(`client/${req.url}`, {root : dirname})
-})
-
-app.get('/*.svg', (req, res) => {
-  res.sendFile(`client/${req.url}`, {root : dirname})
+  res.sendFile('client/tpl/main.html', {root : dirname})
 })
 
 const PORT = process.env.HTTP_PORT || 8080

@@ -1,28 +1,21 @@
 {
-  "name": "cc_games",
+  "name": "ccg",
   "version": "1.0.0",
-  "description": "Catalog of Classic Games",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config src/server/app.js",
-    "dev": "nodemon -r dotenv/config src/server/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TonySatrem/CC_Games.git"
+    "dev": "nodemon -r dotenv/config src/server/server.js",
+    "watchCSS": "npx tailwindcss -i ./src/client/styles/inStyles.css -o ./src/client/styles/outStyles.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TonySatrem/CC_Games/issues"
-  },
-  "homepage": "https://github.com/TonySatrem/CC_Games#readme",
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2"
-  },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.3",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2"
   }
 }
