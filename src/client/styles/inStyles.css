@@ -16,12 +16,24 @@
     overflow-x: hidden;
   }
 
+  .x-pic-bird, .x-pic-mario {
+    right: 0;
+  }
+
+  .x-pic-pacman {
+    transform: scale(0.9);
+    bottom: -5vh;
+    left: -5vw;
+  }
+
   .x-main-bg-pic {
     object-fit: contain;
     user-select: none;
     display: block;
     height: auto;
     max-width: 100%;
+    max-width: calc(100vw / 3);
+    max-height: calc(100vh / 2);
   }
   
   .x-game-container {
@@ -35,6 +47,192 @@
     left: 5vw;
     right: 5vw;
     font-size: calc((7vh + 7vw) / 2);
+  }
+
+  .active {
+    display: block !important;
+  }
+
+  .x-game-container {
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+  }
+
+  .x-game-name-container {
+    width: 100%;
+    max-height: 5vh;
+    position: relative;
+    top: 4vh; 
+    font-weight: 400;
+    font-family: "PressStart2P";
+    font-size: calc((4vh + 4vw) / 2);
+    line-height: 2.5rem;
+    text-align: center; 
+    align-items: center;
+    color: #000;
+  }
+
+  .x-game-main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    width: 92vw;
+    max-height: 60vh;
+    top: 10vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .x-game-info-container {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 43vw;
+    height: inherit;
+    margin-right: 2vw;
+  }
+
+  .x-game-text-container{
+    border-radius: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1.25rem;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    background-color: #D9D9D9;
+    scrollbar-color: grey white;
+  }
+  
+  .x-game-text-container p {
+    font-size: calc((2vh + 1vw) / 2);
+  }
+
+  .x-game-slider-container {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-between;
+    height: inherit;
+    width: fit-content;
+  }
+
+  .x-game-play {
+    background-color: #283783;
+    color: #fff;
+    border-radius: 1.25rem;
+    width: 100%;
+    min-height: max-content;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    cursor: pointer;
+  }
+
+  .x-game-play :hover{
+    cursor: pointer;
+    opacity: 0.8;
+    filter: brightness(90%);
+  }
+
+  .x-games-container a:hover {
+    font-size: calc((3vh + 3vw) / 2);
+    color: lightgrey;
+    height: 10vh;
+    width: auto;
+  }
+
+  .x-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .x-slider img {
+    display: none;
+    box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+    border-radius: 1rem;
+    top: 0;
+    position: relative;
+    max-width: 100%;
+    max-height: 40vh;
+    width: max-content;
+    height: auto;
+  }
+
+  .x-active-slide {
+    display: block !important;
+    animation: fadeImg 0.8s;
+  }
+
+  .x-slider-nav {
+    width: 100%;
+  }
+
+  .x-slider-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0px 1vw;
+  }
+
+  .x-slider-button span {
+    position: relative;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .x-slider-previous:hover span {
+    transform: translateX(-10px) scale(1.2);
+  }
+  
+  .x-slider-next:hover span {
+    transform: translateX(10px) scale(1.2);
+  }
+
+  .x-slider-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: fit-content;
+  }
+
+  .x-slider-arrow {
+    display: flex;
+    font-size: calc((3vh + 2vw) / 2);
+    flex: 0 0 15%;
+  }
+
+  .x-slider-nav span {
+    width: 100%;
+  }
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
