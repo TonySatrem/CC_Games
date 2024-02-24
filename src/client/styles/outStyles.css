@@ -673,6 +673,14 @@ body {
   width: 100%;
 }
 
+footer {
+  background-color: #D72626;
+}
+
+footer span:hover {
+  color: #470A0A;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1057,8 +1065,24 @@ body {
   height: 100vh;
 }
 
+.h-\[10vh\] {
+  height: 10vh;
+}
+
 .h-full {
   height: 100%;
+}
+
+.w-\[this-is\\\\\] {
+  width: this-is\\;
+}
+
+.w-\[this-is\] {
+  width: this-is;
+}
+
+.w-\[weird-and-invalid\] {
+  width: weird-and-invalid;
 }
 
 .w-fit {
@@ -2056,6 +2080,11 @@ body {
   border-style: none;
 }
 
+.bg-\[rgb\(255\2c 0\2c 0\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-emerald-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(110 231 183 / var(--tw-bg-opacity));
@@ -2352,6 +2381,10 @@ body {
 
 .leading-\[4vh\] {
   line-height: 4vh;
+}
+
+.text-\[\#336699\]\/\[\.35\] {
+  color: rgb(51 102 153 / .35);
 }
 
 .text-black {
@@ -2686,6 +2719,11 @@ body {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
+  --tw-content: 'this-is-also-valid]-weirdly-enough';
+  content: var(--tw-content);
+}
+
 .forced-color-adjust-auto {
   forced-color-adjust: auto;
 }
@@ -2694,18 +2732,80 @@ body {
   forced-color-adjust: none;
 }
 
-@keyframes fadeImg {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 @font-face {
   font-family: 'PressStart2P';
 
   src: url('../assets/fonts/PressStart2P-Regular.ttf');
+}
+
+@media (min-width: 640px) {
+  .sm\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sm\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .sm\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .sm\:container {
+      max-width: 1536px;
+    }
+  }
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.before\:hover\:text-center:hover::before {
+  content: var(--tw-content);
+  text-align: center;
+}
+
+.hover\:before\:text-center:hover::before {
+  content: var(--tw-content);
+  text-align: center;
+}
+
+.focus\:hover\:text-center:hover:focus {
+  text-align: center;
+}
+
+.hover\:focus\:text-center:focus:hover {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .sm\:underline {
+    text-decoration-line: underline;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @media (min-width: 1024px) {
+    .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
+      paint-order: markers;
+    }
+  }
 }

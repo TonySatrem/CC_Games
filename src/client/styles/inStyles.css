@@ -224,15 +224,13 @@
   .x-slider-nav span {
     width: 100%;
   }
-}
 
-@keyframes fadeImg {
-  from {
-    opacity: 0;
+  footer {
+    background-color: #D72626;
   }
-
-  to {
-    opacity: 1;
+  
+  footer span:hover {
+    color: #470A0A;
   }
 }
 
