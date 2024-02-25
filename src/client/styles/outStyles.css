@@ -497,6 +497,24 @@ body {
   display: block !important;
 }
 
+.x-sidebar-button, .x-theme-button {
+  padding: 1vw 1vh;
+}
+
+.x-sidebar-button img, .x-theme-button img{
+  height: 10vh;
+  width: auto;
+}
+
+.x-sidebar-container {
+  width: 30vw;
+}
+
+.x-sidebar-paragraph {
+  font-size: calc((1vh + 1.5vw) / 2);
+  text-align: center;
+}
+
 .x-game-container {
   width: 100%;
   height: 100vh;
@@ -902,6 +920,14 @@ footer span:hover {
   top: 0px;
 }
 
+.left-\[1vh\] {
+  left: 1vh;
+}
+
+.top-\[1vh\] {
+  top: 1vh;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -912,6 +938,10 @@ footer span:hover {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {
@@ -958,8 +988,17 @@ footer span:hover {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[3vh\] {
+  margin-top: 3vh;
 }
 
 .box-border {
@@ -1073,6 +1112,19 @@ footer span:hover {
   height: 100%;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1092,6 +1144,10 @@ footer span:hover {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .flex-shrink {
@@ -2230,6 +2286,10 @@ footer span:hover {
      object-fit: scale-down;
 }
 
+.p-\[1vw\] {
+  padding: 1vw;
+}
+
 .px-\[20vw\] {
   padding-left: 20vw;
   padding-right: 20vw;
@@ -2241,6 +2301,10 @@ footer span:hover {
 
 .pl-\[2vw\] {
   padding-left: 2vw;
+}
+
+.pb-\[3vh\] {
+  padding-bottom: 3vh;
 }
 
 .text-left {
