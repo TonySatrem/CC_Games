@@ -88,7 +88,6 @@
     line-height: 2.5rem;
     text-align: center; 
     align-items: center;
-    color: #000;
   }
 
   .x-game-main-container {
@@ -122,8 +121,6 @@
     scroll-behavior: smooth;
     height: 100%;
     width: 100%;
-    background-color: #D9D9D9;
-    scrollbar-color: grey white;
   }
   
   .x-game-text-container p {
@@ -204,7 +201,6 @@
     text-decoration: none;
     background: transparent;
     font-size: 2rem;
-    color: #fff;
     padding: 0px 1vw;
   }
 
@@ -241,14 +237,6 @@
 
   .x-slider-nav span {
     width: 100%;
-  }
-
-  footer {
-    background-color: #D72626;
-  }
-  
-  footer span:hover {
-    color: #470A0A;
   }
 }
 

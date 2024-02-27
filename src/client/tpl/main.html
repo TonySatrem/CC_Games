@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>CC_Games</title>
+
   <link href="../styles/outStyles.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/lightTheme.css" class="x-theme-link">
 </head>
 
 <body>
-  
-    <!-- sidebar -->
+
+<!-- sidebar -->
+
     <div class="h-auto w-auto left-[1vh] top-[1vh] fixed z-50">
       <div class="x-sidebar-button">
         <button>
@@ -19,7 +22,7 @@
       </div>
     </div>
 
-    <div class="x-sidebar-container bg-teal-700 hidden h-[100vh] p-[1vw] fixed text-white text-center z-50">
+    <div class="x-sidebar-container hidden h-[100vh] p-[1vw] fixed text-white text-center z-50">
 
       <div class="w-auto h-min flex justify-between">
         <div class="x-theme-button">
@@ -61,26 +64,27 @@
   <main>
 
     <!-- main block -->
-    <div class="bg-teal-700 w-full h-[100vh] relative text-center align-center">
+
+    <div class="x-main-container w-full h-[100vh] relative text-center align-center">
 
       <div class="h-full w-full grid grid-cols-3 grid-rows-2">
         <figure>
-          <img class="x-main-bg-pic" src="../assets/main/rocket.png" alt="">
+          <img class="x-pic-rocket x-main-bg-pic" src="../assets/main/rocket.png" alt="">
         </figure>
         <figure>
-          <img class="x-main-bg-pic rotate-[180deg]" src="../assets/main/red.png" alt="">
+          <img class="x-pic-red-guy x-main-bg-pic rotate-[180deg]" src="../assets/main/red.png" alt="">
         </figure>
         <figure>
-          <img class="x-main-bg-pic absolute origin-top-left rotate-[15deg]" src="../assets/main/bird.png" alt="">
+          <img class="x-pic-bird x-main-bg-pic absolute origin-top-left rotate-[15deg]" src="../assets/main/bird.png" alt="">
         </figure>
         <figure>
-          <img class="x-main-bg-pic bottom-0 left-[1vw] absolute scale-[1.3]"  src="../assets/main/pacman.png" alt="">  
+          <img class="x-pic-pacman x-main-bg-pic bottom-0 left-[1vw] absolute scale-[1.3]"  src="../assets/main/pacman.png" alt="">  
         </figure>
-      <figure>
+       <figure>
         <!--  -->
-      </figure>
+       </figure>
         <figure>
-          <img class="x-main-bg-pic bottom-0 absolute" src="../assets/main/mario.png" alt="">
+          <img class="x-pic-mario x-main-bg-pic bottom-0 absolute" src="../assets/main/mario.png" alt="">
         </figure>
       </div>
 
@@ -88,8 +92,8 @@
         <div class="x-main-ccg w-fit text-center text-yellow-400 font-normal leading-[11vh] pb-[5vh] z-10">
           <h1>Catalog of Classic Games </h1>
         </div>
-
-        <div class="x-games-container w-full text-black font-normal leading-[4vh] text-center z-10">
+  
+        <div class="x-games-container w-full text-white font-normal leading-[4vh] text-center z-10">
           <a href="#PacMan">Pac&#8288;&#8211;&#8288;Man</a> 
           <br/>
           <a href="#FlappyBird">Flappy&nbsp;Bird</a> 
@@ -105,9 +109,9 @@
       </div>
     </div>
 
-    <!-- pacman block -->
+    <!-- pacMan block -->
 
-    <div class="x-game-container bg-emerald-400">
+    <div class="x-game-container x-pacMan-container">
       <div class="x-game-name-container">
         <a name="PacMan"> Pac&#8288;&#8211;&#8288;man </a>
       </div>
@@ -136,7 +140,7 @@
 
           <div class="x-slider-nav">
             <ul>
-              <li class="x-slider-arrow">
+              <li class="x-slider-arrow pl-[2vw]">
                 <button class="x-slider-button x-slider-previous">
                   <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
                 </button>
@@ -152,17 +156,18 @@
 
           <div class="x-game-play">
             <form action="https://pacman.ee/">
-              <input class="" type="submit" value="Играть"/>
+              <input class="w-full h-full" type="submit" value="Играть"/>
             </form>
           </div>
         </div>
 
       </div>
+
     </div>
 
     <!-- flappyBird block -->
     
-    <div class="x-game-container bg-emerald-300">
+    <div class="x-game-container x-flappyBird-container">
       <div class="x-game-name-container">
         <a name="FlappyBird">Flappy&nbsp;Bird</a>
       </div>
@@ -218,7 +223,7 @@
 
     <!-- spaceInvaders block -->
 
-    <div class="x-game-container bg-orange-100">
+    <div class="x-game-container x-spaceInvaders-container">
       <div class="x-game-name-container">
         <a name="SpaceInvaders"> SpaceInvaders </a>
       </div>
@@ -275,7 +280,7 @@
 
     <!-- tetris block -->
 
-    <div class="x-game-container bg-red-400">
+    <div class="x-game-container x-tetris-container">
       <div class="x-game-name-container">
         <a name="Tetris"> Tetris </a>
       </div>
@@ -331,7 +336,7 @@
 
     <!-- superMario block -->
 
-    <div class="x-game-container bg-red-500">
+    <div class="x-game-container x-mario-container">
       <div class="x-game-name-container">
         <a name="SuperMario"> Super&nbsp;Mario </a>
       </div>
@@ -387,7 +392,7 @@
 
     <!-- pong block -->
 
-    <div class="x-game-container bg-red-600">
+    <div class="x-game-container x-pong-container">
       <div class="x-game-name-container">
         <a name="Pong"> Pong </a>
       </div>
@@ -446,10 +451,8 @@
       <div><a href="mailto:ccgames2324@gmail.com"><span>ccgames2324@gmail.com</span></a></div>
     </div>
   </footer>
-
+  
   <script src="../js/sidebar.js"></script>
   <script src="../js/slider.js"></script>
-  
 </body>
 </html>
-
