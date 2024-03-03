@@ -5,10 +5,454 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>CC_Games</title>
+
   <link href="../styles/outStyles.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/lightTheme.css" class="x-theme-link">
 </head>
 
 <body>
+
+<!-- sidebar -->
+
+    <div class="h-auto w-auto left-[1vh] top-[1vh] fixed z-50">
+      <div class="x-sidebar-button">
+        <button>
+          <img src="../assets/general/sidebarLeft.png" alt="menu icon">
+        </button>
+      </div>
+    </div>
+
+    <div class="x-sidebar-container hidden h-[100vh] p-[1vw] fixed text-white text-center z-50">
+
+      <div class="w-auto h-min flex justify-between">
+        <div class="x-theme-button">
+          <button>
+            <img class="x-theme-icon" src="../assets/general/darkTheme.png" alt="menu icon">
+          </button>
+        </div>
+
+        <div class="x-sidebar-button">
+          <button>
+            <img src="../assets/general/sidebarRight.png" alt="menu icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-[3vh] mx-auto pb-[3vh] h-[80vh] overflow-y-auto flex justify-between flex-col">
+
+        <p class="x-sidebar-paragraph">
+          CC_Games - это небольшой сайт&#8288;&#8211;&#8288;каталог, на котором Вы можете узнать несколько интересных фактов об играх прошлого и поиграть в них
+        </p>
+
+        <p class="x-sidebar-paragraph">
+          Команда: <br><br>
+          Балдин К. <br>
+          Синявский А. <br>
+          Тарасов А. <br>
+          Дуненков В. <br>
+          Воловиков К. <br>
+          Василенко Д. <br><br>
+        </p>
+
+        <p class="x-sidebar-paragraph">
+          CC_Games 2023&#8288;&#8211;&#8288;2024 <br><br> <a href="mailto:ccgames2324@gmail.com"><span>ccgames2324@gmail.com</span></a></div>
+        </p>
+      </div>
+
+    </div>
+
+  <main>
+
+    <!-- main block -->
+
+    <div class="x-main-container w-full h-[100vh] relative text-center align-center">
+
+      <div class="h-full w-full grid grid-cols-3 grid-rows-2">
+        <figure>
+          <img class="x-pic-rocket x-main-bg-pic" src="../assets/main/rocket.png" alt="">
+        </figure>
+        <figure>
+          <img class="x-pic-red-guy x-main-bg-pic rotate-[180deg]" src="../assets/main/red.png" alt="">
+        </figure>
+        <figure>
+          <img class="x-pic-bird x-main-bg-pic absolute origin-top-left rotate-[15deg]" src="../assets/main/bird.png" alt="">
+        </figure>
+        <figure>
+          <img class="x-pic-pacman x-main-bg-pic bottom-0 left-[1vw] absolute scale-[1.3]"  src="../assets/main/pacman.png" alt="">  
+        </figure>
+       <figure>
+        <!--  -->
+       </figure>
+        <figure>
+          <img class="x-pic-mario x-main-bg-pic bottom-0 absolute" src="../assets/main/mario.png" alt="">
+        </figure>
+      </div>
+
+      <div class="top-0 px-[20vw] absolute flex w-full h-full flex-col justify-center items-center">
+        <div class="x-main-ccg w-fit text-center text-yellow-400 font-normal leading-[11vh] pb-[5vh] z-10">
+          <h1>Catalog of Classic Games </h1>
+        </div>
   
+        <div class="x-games-container w-full text-white font-normal leading-[4vh] text-center z-10">
+          <a href="#PacMan">Pac&#8288;&#8211;&#8288;Man</a> 
+          <br/>
+          <a href="#FlappyBird">Flappy&nbsp;Bird</a> 
+          <br/>
+          <a href="#SpaceInvaders">SpaceInvaders</a> 
+          <br/>
+          <a href="#Tetris">Tetris</a> 
+          <br/>
+          <a href="#SuperMario">Super&nbsp;Mario</a> 
+          <br/>
+          <a href="#Pong">Pong</a> 
+        </div>
+      </div>
+    </div>
+
+    <!-- pacMan block -->
+
+    <div class="x-game-container x-pacMan-container">
+      <div class="x-game-name-container">
+        <a name="PacMan"> Pac&#8288;&#8211;&#8288;man </a>
+      </div>
+
+      <div class="x-game-main-container">
+        <div class="x-game-info-container">
+          <div class="x-game-text-container">
+            <p>
+              А вы знали, что… <br> <br>
+              - Игра Pac-Man вышла в Японии в 1979 году, но у себя на Родине она не пользовалась такой популярностью, пока ей не заинтересовалась американская компания "Midway", которая позже выпустит культовый файтинг "Mortal Kombat" <br> <br>
+              - На сегодняшний момент абсолютным чемпионом и рекордсменом по игре в Pac-Man является американец Билли Митчел. В 1999 году ,когда Билли было 33 года, он смог поставить абсолютный рекорд, пройдя полностью всю игру, поедая все точки, призраков и фрукты, и не потеряв не единой жизни. Таким образом он умудрился заработать 3333360 очков, что до него никто не мог сделать. <br> <br>
+              - Игра "Pac-Man" стала настолько успешной и культовой, что различные разработчики стали плодить ее многочисленные клоны. За последние 40 с лишним лет вышло несколько десятков игр по данной тематике. <br> <br>
+              - Компания "ID software" в 1992 году выпустила культовый 3D-шутер "Wolfenstein 3D". Но причем тут Pac-Man? Да при том, что в третьем эпизоде можно попасть на секретный 10-й уровень. В этом случае главный герой попадает в точно такой же лабиринт, как и в игре Pac-Man, и теперь он должен собрать все сокровища на уровне. Но главная проблема заключается в том, что за ним охотятся те самые призраки, которых нельзя убить. <br> <br>
+              - Созданная в Японии оригинальная игра носила название не "Pac-Man", а "Puck-Man" от японского "Паку-Паку", что означает звук открывающегося и закрывающегося рта. Но когда спустя год игра попала в США, компания Midway решила, что данное название не очень подходит для игры, так как в любом случае найдутся детишки, которые затрут или закрасят букву "P" на игровом автомате, чтобы сделать ее похожей на "F". Я думаю, не стоит говорить о том, какое в этом случае получится слово. Таким образом и игра и обрела название "Pac-man".
+            </p>
+          </div>
+        </div>
+        
+        <div class="x-game-slider-container">
+          <div class="x-slider">
+            <img class="x-active-slide" src="../assets/pacman/1.png" alt="">
+            <img class="" src="../assets/pacman/2.png" alt="">
+            <img class="" src="../assets/pacman/3.png" alt="">
+            <img class="" src="../assets/pacman/4.png" alt="">
+          </div>
+
+          <div class="x-slider-nav">
+            <ul>
+              <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                  <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+              </li>
+
+              <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                  <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="x-game-play">
+            <form action="https://pacman.ee/">
+              <input class="w-full h-full" type="submit" value="Играть"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- flappyBird block -->
+    
+    <div class="x-game-container x-flappyBird-container">
+      <div class="x-game-name-container">
+        <a name="FlappyBird">Flappy&nbsp;Bird</a>
+      </div>
+
+      <div class="x-game-main-container">
+        <div class="x-game-info-container">
+          <div class="x-game-text-container">
+            <p>
+              А вы знали, что… <br><br>
+              - Игра для мобильных устройств, разработанная вьетнамским разработчиком Донгом Нгуеном <br><br>
+              - Игра была выпущена 24 мая 2013 года и получила внезапный рост популярности в начале 2014 года. Была подвергнута критике за сложный игровой процесс, плагиат графики и игровой механики; другие обозреватели посчитали, что она вызывает зависимость. <br><br>
+              - В конце января 2014 стала самой скачиваемой бесплатной игрой в App Store. В течение этого времени разработчик зарабатывал $50 000 в день за рекламу внутри приложения <br><br>
+              - По словам автора, создание игрушки заняло всего пару дней <br><br>
+              - Вскоре игра была удалена с App Store и Google Play по желанию самого разработчика.
+            </p>
+          </div>  
+        </div>
+        
+        <div class="x-game-slider-container">
+          <div class="x-slider">
+            <img class="x-active-slide" src="../assets/flappybird/1.png" alt="">
+            <img class="" src="../assets/flappybird/2.png" alt="">
+            <img class="" src="../assets/flappybird/3.png" alt="">
+            <img class="" src="../assets/flappybird/4.png" alt="">
+          </div>
+
+          <div class="x-slider-nav">
+            <ul>
+              <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                  <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+              </li>
+
+              <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                  <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="x-game-play">
+            <form action="https://flappybird.ee/">
+              <input class="w-full h-full" type="submit" value="Играть"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- spaceInvaders block -->
+
+    <div class="x-game-container x-spaceInvaders-container">
+      <div class="x-game-name-container">
+        <a name="SpaceInvaders"> SpaceInvaders </a>
+      </div>
+
+      <div class="x-game-main-container">
+        <div class="x-game-info-container">
+          <div class="x-game-text-container">
+            <p>
+              А вы знали, что… <br><br>
+              - Space Invaders (Космические захватчики) — видеоигра, разработанная Томохиро Нисикадо и выпущенная в 1978 году на аркадных автоматах. <br><br>
+              - Томохиро Нисикадо - японский разработчик компьютерных игр. На создание игры и оборудования к ней он потратил год. <br><br>
+              - Изначально в игре должны были появиться различные виды врагов, такие как танки, боевая авиация и космические корабли. Однако Нисикадо так и не смог определиться с их движениями: технические ограничения затрудняли симуляцию полёта. Симуляция движений людей была проще, но Нисикадо считал расстрел людей аморальным. <br><br>
+              - Первоначальное название игры — Space Monsters (рус. Космические монстры), придуманное по аналогии с популярной в то время в Японии песней Monster, было изменено на Space Invaders по просьбе начальства Нисикадо. <br><br>
+              - До Space Invaders были игры, которые позволяли игроку расстреливать цели, но это была первая игра, в которой враг тоже отвечал огнём. Игрок впервые видел разрушаемые барьеры, за которыми он мог прятаться. <br><br>
+              - Игра популяризировала достижение высокого счёта и сохранения его в памяти автомата для отображения в таблице достижений. Было введено возрастание сложности игры. Сегодня это основа однопользовательских игр.
+            </p>
+          </div>
+        </div>
+        
+        <div class="x-game-slider-container">
+          <div class="x-slider">
+            <img class="x-active-slide" src="../assets/spaceInvaders/1.png" alt="">
+            <img class="" src="../assets/spaceInvaders/2.png" alt="">
+            <img class="" src="../assets/spaceInvaders/3.png" alt="">
+            <img class="" src="../assets/spaceInvaders/4.png" alt="">
+          </div>
+
+          <div class="x-slider-nav">
+            <ul>
+              <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                  <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+              </li>
+
+              <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                  <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="x-game-play">
+            <form action="https://invaders.ee/">
+              <input class="w-full h-full" type="submit" value="Играть"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- tetris block -->
+
+    <div class="x-game-container x-tetris-container">
+      <div class="x-game-name-container">
+        <a name="Tetris"> Tetris </a>
+      </div>
+
+      <div class="x-game-main-container">
+        <div class="x-game-info-container">
+          <div class="x-game-text-container">
+            <p>
+              А вы знали, что… <br><br>
+              - Первый «Тетрис» был написан на Паскале для допотопной «Электроники-60». <br><br>
+              - Название легендарной игры «Тетрис» - это идея Алексея Пажитнова, ее советского изобретателя, - гибрид слов «тетрамино» и «теннис». <br><br>
+              - В Книге рекордов Гиннесса о «Тетрисе» девять записей. В том числе «Самое длительное тюремное заключение благодаря компьютерной игре». Фейз Чопдат отсидел четыре месяца за то, что играл в «Тетрис» на борту самолета, летевшего в Манчестер, и отказался прекратить игру, несмотря на просьбы бортпроводников. <br><br>
+              - По данным Tetris Friends Online Games, в игру онлайн играют более миллиона раз в день. <br><br>
+              - От «Тетриса» умнеют - это доказали исследователи, заставившие группу подростков играть по полчаса в день в течение трех месяцев. Сканирование показало структурные изменения в тех частях мозга, которые отвечали за движение, скорость реакции, критическое мышление и способность производить вычисления.
+            </p>
+          </div>
+        </div>
+        
+        <div class="x-game-slider-container">
+          <div class="x-slider">
+            <img class="x-active-slide" src="../assets/tetris/1.png" alt="">
+            <img class="" src="../assets/tetris/2.png" alt="">
+            <img class="" src="../assets/tetris/3.png" alt="">
+            <img class="" src="../assets/tetris/4.png" alt="">
+          </div>
+
+          <div class="x-slider-nav">
+            <ul>
+              <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                  <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+              </li>
+
+              <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                  <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="x-game-play">
+            <form action="https://ubg365.github.io/tetris/">
+              <input class="w-full h-full" type="submit" value="Играть"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- superMario block -->
+
+    <div class="x-game-container x-mario-container">
+      <div class="x-game-name-container">
+        <a name="SuperMario"> Super&nbsp;Mario </a>
+      </div>
+
+      <div class="x-game-main-container">
+        <div class="x-game-info-container">
+          <div class="x-game-text-container">
+            <p>
+              А вы знали, что… <br><br>
+              - Когда Марио дебютировал в игре "Donkey Kong", его звали Джампмен. Лишь когда игра стала популярной, компания "Nintendo" решила дать герою более простое имя и назвала его Марио. <br><br>
+              - Появившись в игре "Donkey Kong", действия которой происходили на стройке, Марио был плотником. Только позже, появившись в игре "Mario Bros", Марио решили сделать сантехником, из-за путешествий по трубам. <br><br>
+              - Марио имеет культовый костюм, который узнают фанаты по всему миру. Однако изначально такой вид создавался лишь из-за графических ограничений. Художники сделали синий комбинезон и красные рукава, чтобы игроки могли различать движения рук и ног. Усы были добавлены, чтобы сохранять четкость черт лица. А его шляпу добавили только, чтобы не анимировать волосы. <br><br>
+              - Марио принадлежит несколько мировых рекордов Гиннесса. Самым впечатляющим из них видится рекорд в качестве самого продаваемого персонажа видеоигр в мире. <br><br>
+              - После дебюта в "Donkey Kong" разработчики решили примерить Марио роль злодея, поместив его в игру "Donkey Kong Jr.". В игре Марио схватил Донки Конга и посадил его в клетку. А сыну Донки Конга пришлось отправиться на спасение своего отца.
+            </p>
+          </div>
+        </div>
+        
+        <div class="x-game-slider-container">
+          <div class="x-slider">
+            <img class="x-active-slide" src="../assets/superMario/1.png" alt="">
+            <img class="" src="../assets/superMario/2.png" alt="">
+            <img class="" src="../assets/superMario/3.png" alt="">
+            <img class="" src="../assets/superMario/4.png" alt="">
+          </div>
+
+          <div class="x-slider-nav">
+            <ul>
+              <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                  <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+              </li>
+
+              <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                  <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="x-game-play">
+            <form action="https://supermario.ee/">
+              <input class="w-full h-full" type="submit" value="Играть"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- pong block -->
+
+    <div class="x-game-container x-pong-container">
+      <div class="x-game-name-container">
+        <a name="Pong"> Pong </a>
+      </div>
+
+      <div class="x-game-main-container">
+        <div class="x-game-info-container">
+          <div class="x-game-text-container">
+            <p>
+              А вы знали, что… <br><br>
+              - Pong — одна из ранних аркадных видеоигр. Это теннисная спортивная игра с использованием простой двумерной графики, разработанная и выпущенная фирмой Atari в 1972 году. <br><br>
+              - Pong — это первая видеоигра, пришедшая в дома миллионов простых пользователей и усадившая их перед экранами телевизоров.  <br><br>
+              - Pong до сих пор остается объектом научных исследований, в том числе в области обучения алгоритмов искусственного интеллекта, улучшения нейронных сетей и разработки интерфейса типа «мозг-машина» под названием Neuralink.
+            </p>
+          </div>
+        </div>
+        
+        <div class="x-game-slider-container">
+          <div class="x-slider">
+            <img class="x-active-slide" src="../assets/pong/1.png" alt="">
+            <img class="" src="../assets/pong/2.png" alt="">
+            <img class="" src="../assets/pong/3.png" alt="">
+            <img class="" src="../assets/pong/4.png" alt="">
+          </div>
+
+          <div class="x-slider-nav">
+            <ul>
+              <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                  <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+              </li>
+
+              <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                  <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="x-game-play">
+            <form action="https://ponggame.io/">
+              <input class="w-full h-full" type="submit" value="Играть"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="x-footer-container h-[10vh] w-full relative text-white" style="border-top: #000 0.5vh solid; display: flex; justify-content: space-around; align-items: center;">
+      <div><span>CC_Games 2023-2024</span></div>
+      <div><a href="mailto:ccgames2324@gmail.com"><span>ccgames2324@gmail.com</span></a></div>
+    </div>
+  </footer>
+  
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/slider.js"></script>
 </body>
 </html>
