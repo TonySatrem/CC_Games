@@ -1,0 +1,67 @@
+.x-main-bg-pic {
+    object-fit: contain;
+    user-select: none;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (orientation: portrait) {
+    .x-pic-red-guy {
+        display: none;
+    }
+    
+    .x-pic-rocket {
+        margin-top: 5vh;
+        margin-left: 5vw;
+    }
+    
+    .x-main-bg-pic {
+        max-width: calc(100vw / 3 + 10vw);
+        max-height: calc(100vh / 2 + 10vh);
+    }
+    
+    .x-main-ccg {
+        font-size: 2.5rem; 
+        line-height: 3rem; 
+    }
+    
+    .x-games-container {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }    
+}
+
+@media (orientation: landscape) {
+    .x-pic-bird, .x-pic-mario {
+      right: 0;
+    }
+  
+    .x-pic-pacman {
+      transform: scale(0.9);
+      bottom: -5vh;
+      left: -5vw;
+    }
+  
+    .x-main-ccg {
+      top: 30vh; 
+      left: 5vw;
+      right: 5vw;
+      font-size: calc((7vh + 7vw) / 2);
+    }
+  
+    .x-main-bg-pic {
+      max-width: calc(100vw / 3);
+      max-height: calc(100vh / 2);
+    }
+  
+    .x-games-container {
+      font-size: calc((2vh + 2vw) / 2);
+      bottom: 5vh;
+
+      a:hover {
+        font-size: calc((3vh + 3vw) / 2);
+        color: lightgrey;
+      }
+    }
+}

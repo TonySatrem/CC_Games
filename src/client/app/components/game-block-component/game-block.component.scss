@@ -1,0 +1,239 @@
+.x-game-container {
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+}
+
+.x-game-name-container {
+    width: 100%;
+    max-height: 5vh;
+    position: relative;
+    top: 4vh; 
+    font-weight: 400;
+    font-family: "PressStart2P";
+    font-size: calc((4vh + 4vw) / 2);
+    line-height: 2.5rem;
+    text-align: center; 
+    align-items: center;
+}
+
+.x-game-main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.x-game-info-container {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.x-game-text-container {
+    border-radius: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1.25rem;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+.x-game-slider-container {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.x-game-play {
+    background-color: #283783;
+    color: #fff;
+    border-radius: 1.25rem;
+    width: 100%;
+    min-height: max-content;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    cursor: pointer;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+        filter: brightness(90%);
+    }
+}
+
+  /* img-slider */
+
+.x-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        display: none;
+        box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+        border-radius: 1rem;
+        top: 0;
+        position: relative;
+    }
+}
+
+.x-active-slide {
+    display: block !important;
+    animation: fadeImg 0.8s;
+}
+
+.x-slider-nav {
+    width: 100%;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        height: fit-content;
+    }
+
+    span {
+        width: 100%;
+    }
+}
+
+.x-slider-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    font-size: 2rem;
+
+    span {
+        position: relative;
+        display: inline-block;
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+    }
+}
+
+.x-slider-previous:hover span {
+    transform: translateX(-10px) scale(1.2);
+}
+  
+.x-slider-next:hover span {
+    transform: translateX(10px) scale(1.2);
+}
+
+.x-slider-arrow {
+    display: flex;
+    font-size: calc((3vh + 2vw) / 2);
+}
+
+@media (orientation: portrait) {
+    .x-game-main-container {
+        flex-direction: column-reverse;
+        width: auto;
+        height: 90vh;
+        top: 3vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+      .x-game-info-container {
+        height: 40vh; 
+        width: 100%;
+        margin-top: 5vh;
+    }
+    
+      .x-game-slider-container {
+        max-height: 40vh;
+        width: 100%;
+    }
+    
+      .x-slider img {
+        max-width: 100%;
+        max-height: 20vh;
+        width: max-content;
+        height: auto;
+    }
+    
+      .x-slider-button {
+        padding: 0px 1vh;
+    }
+    
+      .x-game-text-container p {
+        font-size: 0.8rem;
+    }
+    
+      .x-slider-arrow {
+        flex-basis: auto;
+    }
+    
+      .x-footer-container {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (orientation: landscape) {
+    .x-game-main-container {
+      flex-direction: row;
+      width: 92vw;
+      max-height: 60vh;
+      top: 10vh;
+      margin-left: 4vw;
+      margin-right: 4vw;
+    }
+  
+    .x-game-info-container {
+      width: 43vw;
+      height: inherit;
+      margin-right: 2vw;
+    }
+  
+    .x-game-slider-container {
+      height: inherit;
+      width: fit-content;
+    }
+  
+    .x-slider img {
+      max-width: 100%;
+      max-height: 40vh;
+      width: max-content;
+      height: auto;
+    }
+  
+    .x-slider-button {
+      padding: 0px 1vw;
+    }
+  
+    .x-game-text-container p {
+      font-size: calc((2vh + 1vw) / 2);
+    }
+  
+    .x-slider-arrow {
+      flex: 0 0 15%;
+    }
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

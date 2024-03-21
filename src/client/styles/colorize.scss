@@ -1,0 +1,120 @@
+@use '_theme';
+@import '_colors';
+
+html {
+  scrollbar-color: var(--html-scrollbar-thumb-color) var(--html-scrollbar-track-color);
+}
+
+.x-sidebar-container {
+  background-color: var(--main-background-color); 
+}
+
+.x-main-container {
+  background-color: var(--main-background-color); 
+}
+
+.x-pacMan-container {
+  background-color: var(--pacman-background-color); 
+
+  .x-game-text-container {
+    background-color: var(--pacman-text-background-color);
+  }
+}
+
+.x-flappyBird-container {
+  background-color: var(--flappybird-background-color); 
+
+  .x-game-name-container {
+    color: var(--flappybird-name-color);
+  }
+
+  .x-game-text-container {
+    background-color: var(--flappybird-text-background-color);
+  }
+}
+
+.x-spaceInvaders-container {
+  background-color: var(--spaceInvaders-background-color); 
+
+  .x-game-name-container {
+    color: var(--spaceInvaders-name-color);
+  }
+
+  .x-game-text-container {
+    background-color: var(--spaceInvaders-text-background-color);
+  }
+
+  .x-slider-button {
+    color: var(--spaceInvaders-slider-color); 
+  }
+}
+
+.x-tetris-container {
+  background-color: var(--tetris-background-color); 
+  
+  .x-game-name-container {
+    color: var(--tetris-name-color);
+  }
+
+  .x-game-text-container {
+    background-color: var(--tetris-text-background-color);
+  }
+
+  .x-slider-button {
+    color: var(--tetris-slider-color); 
+  }
+}
+
+.x-mario-container {
+  background-color: var(--mario-background-color); 
+
+  .x-game-name-container {
+    color: var(--mario-name-color);
+  }
+
+  .x-game-text-container {
+    background-color: var(--mario-text-background-color);
+  }
+
+  .x-slider-button {
+    color: var(--mario-slider-color); 
+  }
+}
+
+.x-pong-container {
+  background-color: var(--pong-background-color); 
+
+  .x-game-name-container {
+    color: var(--pong-name-color);
+  }
+
+  .x-game-text-container {
+    background-color: var(--pong-text-background-color);
+  }
+
+  .x-slider-button {
+    color: var(--pong-slider-color); 
+  }
+}
+
+.x-game-text-container {
+  color: var(--default-game-text-color);
+  background-color: var(--default-game-text-background-color);
+  scrollbar-color:  var(--default-game-text-scrollbar-thumb-color) var(--default-game-text-scrollbar-track-color); 
+}
+
+.x-game-name-container {
+  color: var(--default-game-name-color); 
+}
+
+.x-slider-button {
+  color: var(--default-game-slider-color); 
+}
+
+footer {
+  background-color: var(--footer-background-color); 
+
+  span:hover {
+    color: var(--footer-span-color); 
+  }
+}
