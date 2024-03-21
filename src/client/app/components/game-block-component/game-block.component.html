@@ -1,0 +1,45 @@
+<div [class]="game.containerSelector" class='x-game-container' >
+    <div class="x-game-name-container">
+    <a [name]="game.name" [innerText]="game.header"></a>
+    </div>
+
+    <div class="x-game-main-container">
+    <div class="x-game-info-container">
+        <div class="x-game-text-container">
+        <p [innerHtml]="game.info"></p>
+        </div>
+    </div>
+    
+    <div class="x-game-slider-container">
+        <div class="x-slider">
+            <img *ngFor="let url of game.imgUrls; let i = index"
+                [class]=" i == 0 ? 'x-active-slide' : '' " 
+                [src]="url" alt="">
+        </div>
+
+        <div class="x-slider-nav">
+        <ul>
+            <li class="x-slider-arrow pl-[2vw]">
+            <button class="x-slider-button x-slider-previous">
+                <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+            </button>
+            </li>
+
+            <li class="x-slider-arrow">
+            <button class="x-slider-button x-slider-next">
+                <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+            </button>
+            </li>
+        </ul>
+        </div>
+
+        <div class="x-game-play">
+        <form [action]="game.gameUrl">
+            <input class="w-full h-full" type="submit" value="Играть"/>
+        </form>
+        </div>
+    </div>
+
+    </div>
+
+</div>

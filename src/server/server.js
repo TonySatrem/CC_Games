@@ -5,14 +5,14 @@ import { fileURLToPath } from 'node:url';
 import getDailyNews from "./news/news.js";
 
 const _dirname = dirname(fileURLToPath(import.meta.url)).slice(0, -6)
-const getFileLink = url => `${_dirname.replace(/\\/g, '\/')}client${url}`
+const getFileLink = url => `${_dirname.replace(/\\/g, '\/')}client/out/ccg${url}`
 
 const clientEndpoints = /.+\.(html|css|js|png|svg|ico|png|ttf)/
 
 const app = express()
 
 app.get('/', (req, res) => {
-  res.sendFile('client/tpl/main.html', {root : _dirname})
+  res.sendFile('client/out/ccg/index.html', {root : _dirname})
 })
 
 app.get('/api/getDailyNews', async (req, res) => {
@@ -27,7 +27,7 @@ app.get(clientEndpoints, (req, res) => {
       res.end()
     }
     else 
-      res.sendFile(`client${req.url}`, {root : _dirname})
+      res.sendFile(`client/out/ccg${req.url}`, {root : _dirname})
   })
 })
 
