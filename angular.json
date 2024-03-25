@@ -127,7 +127,7 @@
               "src/client/projects/news/src/assets"
             ],
             "styles": [
-              "src/client/projects/news/src/styles.scss"
+              "src/client/projects/news/src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -190,7 +190,7 @@
               "src/client/projects/news/src/assets"
             ],
             "styles": [
-              "src/client/projects/news/src/styles.scss"
+              "src/client/projects/news/src/styles/styles.scss"
             ],
             "scripts": []
           }
