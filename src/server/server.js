@@ -1,25 +1,49 @@
-const fs = require('node:fs')
-const express = require('express')
-
-const dirname = __dirname.substring(0, __dirname.length - 6)
-const getFileLink = url => `${dirname.replace(/\\/g, '\/')}client${url}`
-const endpoins = /.+\.(html|css|js|png|svg|ico|png|ttf)/
+import express from "express"
+import getDailyNews from "./news/news.js"
+import { getFile } from "./lib/getFile.js"
+import getContentType from "./lib/getContentType.js"
 
 const app = express()
 
-app.get('/', (req, res) => {
-  res.sendFile('client/tpl/main.html', {root : dirname})
+app.get(/^\/(news)?$/, (req, res) => {
+  const { file, path } = getFile({
+    isIndex: true,
+    req
+  })
+  
+  res.set({
+      'Content-Type': getContentType(path),
+      'Content-Length': Buffer.byteLength(file)
+  })
+  
+  res.sendFile(path)
 })
 
-app.get(endpoins, (req, res) => {
-  fs.access(getFileLink(req.url), (err) => {
-    if (err) {
-      res.sendStatus(404)
-      res.end()
-    }
-    else 
-      res.sendFile(`client${req.url}`, {root : dirname})
-  })
+const clientEndpoints = /.+\.(html|css|js|png|svg|ico|ttf|oft|woff|woff2)/
+
+app.get(clientEndpoints, (req, res) => {
+  try {
+    const { file, path } = getFile({
+      req
+    })
+
+    res.set({
+      'Content-Type': getContentType(path),
+      'Content-Length': Buffer.byteLength(file)
+    })
+
+    res.sendFile(path)
+  }
+  catch (err) {
+    console.error(err)
+    res.sendStatus(404)
+    res.end()
+  }
+})
+
+app.get('/api/getDailyNews', async (req, res) => {
+  res.setHeader("Content-Type", "text/json")
+  res.send(await getDailyNews())
 })
 
 const PORT = process.env.HTTP_PORT || 8080

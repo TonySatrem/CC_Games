@@ -1,0 +1,38 @@
+.x-sidebar-paragraph {
+    text-align: center;
+}
+
+.x-sidebar-button, .x-theme-button {
+    padding: 1vw 1vh;
+}
+
+@media (orientation: portrait) {
+  .x-sidebar-button img, .x-theme-button img{
+    height: 6vh;
+    width: auto;
+  }
+
+  .x-sidebar-container {
+    width: 100vw;
+  }
+
+  .x-sidebar-paragraph {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+@media (orientation: landscape) {
+  .x-sidebar-button img, .x-theme-button img{
+    height: 10vh;
+    width: auto;
+  }
+
+  .x-sidebar-container {
+    width: 30vw;
+  }
+
+  .x-sidebar-paragraph {
+    font-size: calc((1vh + 1.5vw) / 2);
+  }
+}
