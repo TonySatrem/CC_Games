@@ -11,6 +11,6 @@ export class NewsService {
   constructor(private http: HttpClient) { }
 
   getDailyNews(): Observable<INews[]> {
-    return this.http.get<INews[]>("http://localhost:8080/api/getDailyNews");
+    return this.http.get<INews[]>("https://ccgames.online/api/getDailyNews");
   }
 }
