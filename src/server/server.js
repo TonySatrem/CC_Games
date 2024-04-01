@@ -1,9 +1,12 @@
 import express from "express"
+import cors from "cors"
 import getDailyNews from "./news/news.js"
 import { getFile } from "./lib/getFile.js"
 import getContentType from "./lib/getContentType.js"
 
 const app = express()
+
+app.use(cors())
 
 app.get(/^\/(news)?$/, (req, res) => {
   const { file, path } = getFile({

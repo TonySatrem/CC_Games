@@ -6,6 +6,10 @@
     max-width: 100%;
 }
 
+.x-main-ccg h1, .x-main-news h3, .x-games-container a{
+  backdrop-filter: blur(2px);
+}
+
 @media (orientation: portrait) {
     .x-pic-red-guy {
         display: none;

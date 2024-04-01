@@ -1,0 +1,14 @@
+@use '_theme';
+@import '_colors';
+
+html {
+    scrollbar-color: var(--html-scrollbar-thumb-color) var(--html-scrollbar-track-color);
+}
+
+header {
+    background-color: var(--header-background-color);
+}
+
+body {
+    background-color: var(--main-background-color);
+}

@@ -1,0 +1,44 @@
+@media (orientation: portrait) {
+    .x-news-container {
+        flex-direction: column;
+    }
+
+    .x-news-img-container {
+        margin-bottom: 5vh;
+        height: 22vh;
+        width: 100%;
+
+        button {
+            margin-top: 2vh;
+        }
+    }
+
+    .x-news-text-container {
+        min-height: 52vh;
+        max-height: 100%;
+        width: 100%;
+        font-size: 0.7rem;
+
+        h4 {
+            font-size: 0.8rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .x-news-container {
+        flex-direction: row;
+    }
+
+    .x-news-img-container {
+        margin-right: 5vw;
+        width: 30vw;
+        height: 100%;
+    }
+
+    .x-news-text-container {
+        width: 43vw;
+        height: 100%;
+    }
+}

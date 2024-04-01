@@ -1,0 +1,24 @@
+header {
+    overflow: hidden;
+
+    h1 {
+        color: #fff200 !important;
+    }
+
+    img {
+        max-height: 100%; 
+        max-width: 100%;
+    }
+} 
+
+@media (orientation: portrait) {
+    header h1 {
+        line-height: 4vh;
+    }
+}
+
+@media (orientation: landscape) {
+    header h1 {
+        line-height: 8vh;
+    }
+}
