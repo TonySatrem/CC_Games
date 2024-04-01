@@ -11,7 +11,7 @@ export function getSites() {
     return sites
 }
 
-export function getSiteUrl(name, date = getYesterdayDate()) {
+export function getSiteUrl(name, date) {
     const site = getSite(name)
 
     return site.getByDateUrl 
@@ -21,10 +21,6 @@ export function getSiteUrl(name, date = getYesterdayDate()) {
         : site.rootUrl
 }
 
-export function getSitesUrls(date = getYesterdayDate()) {
+export function getSitesUrls(date) {
     return sites.map(s => getSiteUrl(s.name, date))
-}
-
-function getYesterdayDate () {
-    return ( d => new Date(d.setDate(d.getDate()-1)) )(new Date)
 }

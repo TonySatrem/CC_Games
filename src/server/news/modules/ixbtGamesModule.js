@@ -1,13 +1,20 @@
 import * as http from "../utils/http.js"
 import * as sites from "../utils/sites.js"
 import * as parser from "../utils/DOMParser.js"
+import * as dates from "../utils/dates.js"
 import NewsData from "../models/newsData.js"
 import htmlElementAttributes from "../enums/htmlElementAttributes.js"
 
-const name = "ixbt.games"
+export const name = "ixbt.games"
+
 const config = sites.getSite(name)
 
-export default async function ixbtGamesGetData (date) {
+export async function getData () {
+    return (await getDataByDate(dates.getTodayDate()))
+        .concat(await getDataByDate(dates.getYesterdayDate()))
+}
+
+async function getDataByDate(date) {
     const url = sites.getSiteUrl(name, date)
 
     const mainBody = await http.get(url)
@@ -30,24 +37,27 @@ export default async function ixbtGamesGetData (date) {
                     const header = parser.getTagText(body, config.headerSelector)
                     const announcement = parser.getTagText(body, config.announcementSelector)
                     const imgUrl = parser.getTagAttr(body, config.imgSelector, htmlElementAttributes.src)
-                    const text = parser.getTagText(body, config.textSelector)
+                    const text = parser.getTagText(body, config.textSelector).slice(0, -7)
                     const date = parser.getTagText(body, config.dateSelector)
                     const authorTag = parser.getTag(body, config.authorSelector)
                     const authorName = authorTag.attr(htmlElementAttributes.title)
                     const authorLink = authorTag.attr(htmlElementAttributes.href)
                     
-                    data.push(new NewsData(
-                        link,
+                    data.push(new NewsData({
                         header,
                         announcement,
                         imgUrl,
                         text,
                         date,
-                        {
+                        author: {
                             name: authorName,
                             link: authorLink
-                        }
-                    ))
+                        },
+                        link: {
+                            url: link,
+                            domain: config.rootUrl.split("://")[1]
+                        },
+                    }))
                 }
             )
         )

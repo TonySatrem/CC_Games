@@ -1,1 +1,6 @@
-<p>news works!</p>
+<div class="w-full min-h-full">
+    <div class="flex flex-col justify-center items-center">
+        <app-news-block *ngFor="let news of newsArr" [news]="news"
+        ></app-news-block>
+    </div>
+</div>

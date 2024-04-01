@@ -1,1 +1,30 @@
-<p>news-block works!</p>
+<div class="x-news-container w-[80vw] h-[90vh] my-[4vh] px-[3vw] py-[3vh] flex rounded-3xl" 
+    [style]="'background-color: ' + news.colors?.outerBC">
+    
+    <div class="x-news-img-container flex flex-col justify-between">
+        <div></div>
+        <img [src]="news.imgUrl" class="w-auto h-auto max-w-full max-h-full rounded-xl" alt="">
+        <button class="w-full mx-auto rounded-lg h-[7vh]"
+            [id]="'x-news-read-' + news.id"
+            [style]="'background-color: ' + news.colors?.innerBC">
+            <span>Читать</span>
+        </button>
+    </div>
+    
+    <div class="x-news-text-container px-[3vw] py-[2vh] rounded-xl flex flex-col justify-between place-items-center" 
+        [style]="'background-color: ' + news.colors?.innerBC">
+
+        <h4 class="text-center font-semibold text-xl">{{ news.header }}</h4>
+
+        <p class="text-center font-light">{{ news.announcement }}...</p>
+
+        <p class="text-center text-sm font-thin">
+            <span class>{{ news.date }}  </span>
+
+            <a [href]="news.author.link" class="underline">
+                <span>{{ news.author.name }}</span>
+            </a>
+        </p>
+    </div>
+
+</div>

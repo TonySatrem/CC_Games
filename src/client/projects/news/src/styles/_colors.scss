@@ -1,0 +1,20 @@
+$html-scrollbar-thumb-color-light: #c1c1c1;
+$html-scrollbar-thumb-color-dark: #969696;
+
+$html-scrollbar-track-color-light: #f1f1f1;
+$html-scrollbar-track-color-dark: #2c2c2c;
+
+
+$main-background-color-light: #006F74;
+$main-background-color-dark: #01002F;
+
+$header-background-color-light: #145062;
+$header-background-color-dark: #01002F;
+
+$colors: (
+    --html-scrollbar-thumb-color: ($html-scrollbar-thumb-color-light, $html-scrollbar-thumb-color-dark),
+    --html-scrollbar-track-color: ($html-scrollbar-track-color-light, $html-scrollbar-track-color-dark),
+    
+    --main-background-color: ($main-background-color-light, $main-background-color-dark),
+    --header-background-color: ($header-background-color-light, $header-background-color-dark)
+);

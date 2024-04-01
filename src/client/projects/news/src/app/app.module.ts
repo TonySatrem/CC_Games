@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header-component/header.component'
 import { NewsComponent } from './components/news-component/news.component';
 import { NewsBlockComponent } from './components/news-block-component/news-block.component';
 import { FoodbarComponent } from './components/foodbar-component/foodbar.component';
+import { NewsService } from './services/news.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,13 @@ import { FoodbarComponent } from './components/foodbar-component/foodbar.compone
   ],
   imports: [
     BrowserModule,
+    HttpClientModule
     // AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    HttpClient,
+    NewsService
+  ],
   bootstrap: [AppRootComponent]
 })
 export class AppModule { }

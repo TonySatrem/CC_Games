@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, Inject } from '@angular/core';
+import header from 'news/src/utils/header';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  constructor(@Inject(DOCUMENT) private document: Document, private elementRef: ElementRef) {}
+  
+  ngAfterViewInit() {
+    header()
+  }
 }

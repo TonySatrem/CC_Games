@@ -1,12 +1,12 @@
 export default class NewsData {
     
-    constructor (link, header, announcement, imgUrl, text, date, author) {
-        this.link = link,
-        this.header = header
-        this.announcement = announcement
-        this.imgUrl = imgUrl
-        this.text = text
-        this.date = date
-        this.author = author
+    constructor (obj) {
+        this.link = obj.link,
+        this.header = obj.header
+        this.announcement = obj.announcement
+        this.imgUrl = obj.imgUrl
+        this.text = obj.text
+        this.date = obj.date
+        this.author = obj.author
     }
 }

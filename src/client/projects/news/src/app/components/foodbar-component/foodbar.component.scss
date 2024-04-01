@@ -1,0 +1,22 @@
+.x-footer-container {
+    border-top: #fff 0.5vh solid; 
+    display: flex; 
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+@media (orientation: portrait) {
+    .x-footer-container {
+        flex-direction: column;
+        padding-top: 3vh; 
+    }
+}
+
+@media (orientation: landscape) {
+    .x-footer-container {
+        justify-content: space-around; 
+    }
+}
