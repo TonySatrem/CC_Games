@@ -13,3 +13,6 @@
 # Используемые технологии:
 +	Front-end: JavaScript/TypeScript, Angular, HTML, SCSS;
 +	Back-end: Node.js, Nginx.
+# Ссылки: 
++ Дизайн проекта: [Figma](https://www.figma.com/file/YV32e04Dhe8HNlGf5o94vX/CC_Games?type=design&node-id=0%3A1&mode=design&t=0Yu4XyKrSeV83qF2-1)
++ Деплой: [CC_Games](https://ccgames.online)
