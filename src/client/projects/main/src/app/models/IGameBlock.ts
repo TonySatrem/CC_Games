@@ -4,5 +4,6 @@ export interface IGameBlock {
     containerSelector: string,
     info: string,
     imgUrls: string[],
-    gameUrl: string
+    gameUrl: string,
+    jsDosCDN: string
 }
