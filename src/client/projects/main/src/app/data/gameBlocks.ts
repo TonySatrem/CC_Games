@@ -2,6 +2,7 @@ import { IGameBlock } from "../models/IGameBlock"
 
 export const gameBlocks: IGameBlock[] = [
     {
+        id: 1,
         name: "PacMan",
         header: "Pac-man",
         containerSelector: "x-pacMan-container",
@@ -17,9 +18,11 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/pacman/3.png",
             "../assets/pacman/4.png"
         ],
-        gameUrl: "https://pacman.ee/"
+        gameUrl: "https://pacman.ee/",
+        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Foriginal%2F2X%2F5%2F5cdcffbf268b3be0555025902b52a8d21ad595b9.jsdos"
     },
     {
+        id: 2,
         name: "FlappyBird",
         header: "Flappy Bird",
         containerSelector: "x-flappyBird-container",
@@ -35,9 +38,11 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/flappybird/3.png",
             "../assets/flappybird/4.png"
         ],
-        gameUrl: "https://flappybird.ee/"
+        gameUrl: "https://flappybird.ee/",
+        jsDosCDN: ""
     },
     {
+        id: 3,
         name: "SpaceInvaders",
         header: "SpaceInvaders",
         containerSelector: "x-spaceInvaders-container",
@@ -54,9 +59,11 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/spaceInvaders/3.png",
             "../assets/spaceInvaders/4.png"
         ],
-        gameUrl: "https://invaders.ee/"
+        gameUrl: "https://invaders.ee/",
+        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fspace-invaders______.jsdos"
     },
     {
+        id: 4,
         name: "Tetris",
         header: "Tetris",
         containerSelector: "x-tetris-container",
@@ -72,9 +79,11 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/tetris/3.png",
             "../assets/tetris/4.png"
         ],
-        gameUrl: "https://ubg365.github.io/tetris/"
+        gameUrl: "https://ubg365.github.io/tetris/",
+        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Ftetris____.jsdos"
     },
     {
+        id: 5,
         name: "SuperMario",
         header: "Super Mario",
         containerSelector: "x-mario-container",
@@ -90,9 +99,11 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/superMario/3.png",
             "../assets/superMario/4.png"
         ],
-        gameUrl: "https://supermario.ee/"
+        gameUrl: "https://supermario.ee/",
+        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fmario-luigi.jsdos"
     },
     {
+        id: 6,
         name: "Pong",
         header: "Pong",
         containerSelector: "x-pong-container",
@@ -106,6 +117,7 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/pong/3.png",
             "../assets/pong/4.png"
         ],
-        gameUrl: "https://ponggame.io/"
+        gameUrl: "https://ponggame.io/",
+        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Femeritus-pong.jsdos"
     },
 ]
