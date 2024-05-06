@@ -19,27 +19,7 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/pacman/4.png"
         ],
         gameUrl: "https://pacman.ee/",
-        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Foriginal%2F2X%2F5%2F5cdcffbf268b3be0555025902b52a8d21ad595b9.jsdos"
-    },
-    {
-        id: 2,
-        name: "FlappyBird",
-        header: "Flappy Bird",
-        containerSelector: "x-flappyBird-container",
-        info: `А вы знали, что… <br><br>
-        - Игра для мобильных устройств, разработанная вьетнамским разработчиком Донгом Нгуеном <br><br>
-        - Игра была выпущена 24 мая 2013 года и получила внезапный рост популярности в начале 2014 года. Была подвергнута критике за сложный игровой процесс, плагиат графики и игровой механики; другие обозреватели посчитали, что она вызывает зависимость. <br><br>
-        - В конце января 2014 стала самой скачиваемой бесплатной игрой в App Store. В течение этого времени разработчик зарабатывал $50 000 в день за рекламу внутри приложения <br><br>
-        - По словам автора, создание игрушки заняло всего пару дней <br><br>
-        - Вскоре игра была удалена с App Store и Google Play по желанию самого разработчика.`,
-        imgUrls: [
-            "../assets/flappybird/1.png",
-            "../assets/flappybird/2.png",
-            "../assets/flappybird/3.png",
-            "../assets/flappybird/4.png"
-        ],
-        gameUrl: "https://flappybird.ee/",
-        jsDosCDN: ""
+        jsDosCDN: "https://cdn.dos.zone/original/2X/5/5cdcffbf268b3be0555025902b52a8d21ad595b9.jsdos"
     },
     {
         id: 3,
@@ -60,7 +40,7 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/spaceInvaders/4.png"
         ],
         gameUrl: "https://invaders.ee/",
-        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fspace-invaders______.jsdos"
+        jsDosCDN: "https://cdn.dos.zone/custom/dos/space-invaders______.jsdos"
     },
     {
         id: 4,
@@ -80,7 +60,7 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/tetris/4.png"
         ],
         gameUrl: "https://ubg365.github.io/tetris/",
-        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Ftetris____.jsdos"
+        jsDosCDN: "https://cdn.dos.zone/custom/dos/tetris____.jsdos"
     },
     {
         id: 5,
@@ -100,7 +80,7 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/superMario/4.png"
         ],
         gameUrl: "https://supermario.ee/",
-        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fmario-luigi.jsdos"
+        jsDosCDN: "https://cdn.dos.zone/custom/dos/mario-luigi.jsdos"
     },
     {
         id: 6,
@@ -118,6 +98,6 @@ export const gameBlocks: IGameBlock[] = [
             "../assets/pong/4.png"
         ],
         gameUrl: "https://ponggame.io/",
-        jsDosCDN: "https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Femeritus-pong.jsdos"
+        jsDosCDN: "https://cdn.dos.zone/custom/dos/emeritus-pong.jsdos"
     },
 ]
