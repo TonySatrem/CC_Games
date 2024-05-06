@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, Inject, Input } from '@angular/core';
+import GameBlock from 'main/src/utils/gameBlock';
 import { IGameBlock } from '../../models/IGameBlock';
 
 @Component({
@@ -8,4 +10,10 @@ import { IGameBlock } from '../../models/IGameBlock';
 })
 export class GameBlockComponent {
   @Input() game: IGameBlock
+
+  constructor(@Inject(DOCUMENT) private document: Document, private elementRef: ElementRef) {}
+  
+  ngAfterViewInit() {
+    GameBlock(this.game)
+  }
 }

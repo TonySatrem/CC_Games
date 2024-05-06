@@ -8,15 +8,15 @@ export default function newsBlock(news: INews) {
         e.preventDefault()
         
         document.querySelector('main')!.innerHTML = getElement(news).outerHTML || ""
-    })
 
-    let returnButton = document.querySelector('.x-return-button')
+        const returnButton = document.querySelector('.x-return-button')
     
-    returnButton?.addEventListener('click', (e) => {
-        e.preventDefault()
-    
-        document.location.href = "/news"
-    }, {once: true})
+        returnButton?.addEventListener('click', (e) => {
+            e.preventDefault()
+        
+            document.location.href = "/news"
+        }, {once: true})
+    })
 }
 
 function getElement(news: INews): HTMLElement{

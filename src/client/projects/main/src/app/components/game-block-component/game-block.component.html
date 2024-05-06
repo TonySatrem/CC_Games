@@ -4,41 +4,42 @@
     </div>
 
     <div class="x-game-main-container">
-    <div class="x-game-info-container">
-        <div class="x-game-text-container">
-        <p [innerHtml]="game.info"></p>
+        <div class="x-game-info-container">
+            <div class="x-game-text-container">
+            <p [innerHtml]="game.info"></p>
+            </div>
         </div>
-    </div>
     
-    <div class="x-game-slider-container">
-        <div class="x-slider">
-            <img *ngFor="let url of game.imgUrls; let i = index"
-                [class]=" i == 0 ? 'x-active-slide' : '' " 
-                [src]="url" alt="">
-        </div>
+        <div class="x-game-slider-container">
+            <div class="x-slider">
+                <img *ngFor="let url of game.imgUrls; let i = index"
+                    [class]=" i == 0 ? 'x-active-slide' : '' " 
+                    [src]="url" alt="">
+            </div>
 
-        <div class="x-slider-nav">
-        <ul>
-            <li class="x-slider-arrow pl-[2vw]">
-            <button class="x-slider-button x-slider-previous">
-                <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
-            </button>
-            </li>
+            <div class="x-slider-nav">
+            <ul>
+                <li class="x-slider-arrow pl-[2vw]">
+                <button class="x-slider-button x-slider-previous">
+                    <span> <&#8288;&#8211;&#8288;&#8288;&#8211;&#8288; </span>
+                </button>
+                </li>
 
-            <li class="x-slider-arrow">
-            <button class="x-slider-button x-slider-next">
-                <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
-            </button>
-            </li>
-        </ul>
-        </div>
+                <li class="x-slider-arrow">
+                <button class="x-slider-button x-slider-next">
+                    <span> &#8288;&#8211;&#8288;&#8288;&#8211;&#8288;> </span>
+                </button>
+                </li>
+            </ul>
+            </div>
 
-        <div class="x-game-play">
-        <form [action]="game.gameUrl">
-            <input class="w-full h-full" type="submit" value="Играть"/>
-        </form>
+            <div class="x-game-play">
+                <button class="w-full h-full"
+                    [id]="'x-games-play-button-' + game.id">
+                    <span>Играть</span>
+                </button>
+            </div>
         </div>
-    </div>
 
     </div>
 

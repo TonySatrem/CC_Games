@@ -1,4 +1,5 @@
 export interface IGameBlock {
+    id: number,
     name: string,
     header: string,
     containerSelector: string,
