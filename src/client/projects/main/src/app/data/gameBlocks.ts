@@ -22,6 +22,25 @@ export const gameBlocks: IGameBlock[] = [
         jsDosCDN: "https://cdn.dos.zone/original/2X/5/5cdcffbf268b3be0555025902b52a8d21ad595b9.jsdos"
     },
     {
+        id: 2,
+        name: "NeedForSpeed",
+        header: "The need for speed",
+        containerSelector: "x-NeedForSpeed-container",
+        info: `А вы знали, что… <br> <br>
+        - Первая часть сериала вышла 31 августа 1994 года на приставке Рапаsоniс 3DO. Разработкой игры занималась ЕА Canada (до покупки В 1991 году издательством Electronic Arts компания называлась Distinctive Software). На РС игру портировали лишь спустя год. <br> <br>
+        - В первой части было представлено 8 реально существующих автомобилей. Технические характеристики машин разработчикам предоставила редакция журнала Road & Track. Именно поэтому полное название игры — Road & Track Presents: The Need for Speed. <br> <br>
+        - Удивительно, но после триумфального шествия первой части, Need for Speed 11 встретили довольно прохладно. Виной тому три грубые ошибки разработчиков: они решили убрать из игры полицейских, добавить к серийным моделям автомобилей концепткары и сделать все трассы закольцованными. <br> <br>
+        - В 1997 году Electronic Arts попыталась запустить спинофф Need for Speed под названием V-Rally. Разработкой раллийного симулятора занималась французская компания Eden Studios. В 1999 году подоспело продолжение V-Rally 2. Но на этом история отпочкования от Need for Speed закончилась.`,
+        imgUrls: [
+            "../assets/needForSpeed/1.png",
+            "../assets/needForSpeed/2.png",
+            "../assets/needForSpeed/3.png",
+            "../assets/needForSpeed/4.png"
+        ],
+        gameUrl: "https://playclassic.games/games/racing-driving-dos-games-online/play-the-need-for-speed-online/play/",
+        jsDosCDN: "https://cdn.dos.zone/custom/dos/nfs.jsdos"
+    },
+    {
         id: 3,
         name: "SpaceInvaders",
         header: "SpaceInvaders",
