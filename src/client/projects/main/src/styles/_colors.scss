@@ -29,6 +29,12 @@ $pacman-background-color-dark: #023E29;
 
 $pacman-text-background-color-dark: #01110B;
 
+$needForSpeed-background-color-light: #81CDC2;
+$needForSpeed-background-color-dark: #014339;
+
+$needForSpeed-name-color-dark: #131918;
+
+$needForSpeed-text-background-color-dark: #041E1A;
 
 $flappybird-background-color-light: #81CDC2;
 $flappybird-background-color-dark: #014339;
@@ -104,6 +110,11 @@ $colors: (
 
     --pacman-background-color: ($pacman-background-color-light, $pacman-background-color-dark),
     --pacman-text-background-color: ($default-game-text-background-color-light, $pacman-text-background-color-dark),
+
+    --needForSpeed-background-color: ($needForSpeed-background-color-light, $needForSpeed-background-color-dark),
+	--needForSpeed-name-color: ($default-game-name-color-light, $needForSpeed-name-color-dark),
+	--needForSpeed-text-background-color: ($default-game-text-background-color-light, $needForSpeed-text-background-color-dark),
+
 
     --flappybird-background-color: ($flappybird-background-color-light, $flappybird-background-color-dark),
     --flappybird-name-color: ($default-game-name-color-light, $flappybird-name-color-dark),

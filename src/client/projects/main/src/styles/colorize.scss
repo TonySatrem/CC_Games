@@ -21,6 +21,18 @@ html {
   }
 }
 
+.x-NeedForSpeed-container {
+  background-color: var(--needForSpeed-background-color);
+
+  .x-game-name-container {
+    color: var(--needForSpeed-name-color)
+  }
+
+  .x-game-text-container {
+    background-color: var(--needForSpeed-text-background-color)
+  }
+}
+
 .x-flappyBird-container {
   background-color: var(--flappybird-background-color); 
 
