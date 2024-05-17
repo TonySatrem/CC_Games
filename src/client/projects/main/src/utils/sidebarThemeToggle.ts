@@ -44,15 +44,12 @@ export default function sidebarThemeToggle () : void {
     }
   }
 
-  function sidebarToggle (event : Event) : void {
+  function sidebarToggle(event: Event): void {
     event.preventDefault()
-    
+
     sidebar!.classList.toggle('active')
     main.classList.toggle('blur-sm')
     footer.classList.toggle('blur-sm')
-
-    if (sidebar!.classList.contains('active')) {
-      main.addEventListener('click', sidebarToggle, { once: true })
-    }
   }
+
 }
